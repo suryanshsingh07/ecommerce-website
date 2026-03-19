@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.contact{
+    width: 100%;
+    padding: 20px;
+}
+.contact > .container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact > .container > .contact_form{
+    width: 100%;
+    max-width: 600px;
+    background: #f6f6f6;
+    padding: 25px 30px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    margin: auto;
+    border-top: 3px solid #fed700;
+    border-radius: 6px;
+    text-align: left;
+}
+.contact > .container > .contact_form > h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 28px;
+    font-weight: 400;
+}
+.contact > .container > .contact_form > p{
+    margin-top: 8px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact > .container > .contact_form .box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+.contact > .container > .contact_form  .box > .lable > h4{
+    margin-bottom: 6px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact > .container > .contact_form .box > .input_box{
+    width: 110%;
+}
+.contact > .container > .contact_form .box > .input_box input,
+.contact > .container > .contact_form .box > .input_box textarea{
+    width: 100%;
+    max-width: 80%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #8a8a8a;
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+.contact > .container > .contact_form .box > .input_box input:focus,
+.contact > .container > .contact_form .box > .input_box textarea:focus{
+    border-bottom-color: #fed700;
+}
+.contact > .container > .contact_form  button{
+    display: block;
+    margin: 30px auto;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #232323;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #fed700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.contact > .container > .contact_form button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.contact > .container > .contact_form button:active{
+    transform: scale(0.95);
+}

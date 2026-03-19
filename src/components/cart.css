@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.cart{
+    width: 100%;
+    padding: 20px 30px;
+}
+.cart > h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+}
+.cart > p{
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart > .empty_cart{
+    width: 100%;
+    align-items: center;
+}
+.cart > .empty_cart > img{
+    display: block;
+    height: 275px;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
+}
+.cart > .empty_cart > img:hover{
+    transform: scale(1.012);
+}
+.cart > .empty_cart > h3{
+    text-align: center;
+    font-size: 18px;
+    color: #232323;
+    letter-spacing: 1px;
+}
+.cart > .empty_cart > .btn {
+    display: flex;
+    justify-content: center;
+}
+.cart > .empty_cart > .btn > button{
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background: #fed700;
+    color: #232323;
+    border: none;
+    outline: none;
+    border: 1px solid #fed700;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart > .container{
+    max-width: 100%;
+    padding: 10px 20px;
+}
+.cart > .container > .box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 2px solid #f6f6f6;
+    height: auto;
+    padding: 15px 0;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cart > .container > .box:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.cart > .container > .box > .img_box > img{
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.cart > .container > .box:hover .img_box > img{
+    transform: scale(1.05);
+}
+.cart > .container > .box > .detail{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.cart > .container > .box > .detail > .info{
+    margin-left: 75px;
+}
+.cart > .container > .box > .detail > .info > h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#8a8a8a
+}
+.cart > .container > .box > .detail > .info > h3{
+    margin-top: 10px;
+    color: #232323;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.cart > .container > .box > .detail > .info > p{
+    margin-top: 10px;
+    color: #232323;
+}
+.cart > .container > .box > .detail > .quantity{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    height: 30px;
+}
+.cart > .container > .box > .detail > .quantity > button{
+    padding: 0px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #232323;
+    border: none;
+    outline: none;
+    background: #fed700;
+    border-radius: 5px;
+    font-weight: 600;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.cart > .container > .box > .detail > .quantity > button:hover{
+    background: #ffdf33;
+}
+.cart > .container > .box > .detail > .quantity > button:active{
+    transform: scale(0.9);
+}
+.cart > .container > .box > .detail > .quantity > input{
+    text-align: center; 
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid #fed700;
+    border-radius: 5px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 600;
+    width: 65px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cart > .container > .box > .detail > .quantity > input:focus{
+    border-color: #cd1e70;
+    box-shadow: 0 0 8px rgba(205,30,112,0.4);
+}
+.cart > .container > .box > .detail > .icon{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.cart > .container > .box > .detail > .icon > li{
+    list-style: none;
+    background: #cd1e70;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.cart > .container > .box > .detail > .icon > li:hover{
+    background: #e0247a;
+    box-shadow: 0 6px 15px rgba(205,30,112,0.4);
+}
+.cart > .container > .box > .detail > .icon > li:active{
+    transform: scale(0.9);
+}
+.cart > .bottom{
+    margin-left: 100px;
+     transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.cart button:hover{
+    background: #ffdf33;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.cart button:active{
+    transform: scale(0.95);
+}
+.cart > .bottom > .total > h4{
+    font-size: 22px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cart > .bottom > button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    background: #fed700;
+    color: #232323;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .cart{
+        padding: 15px;
+    }
+    .cart > h2{
+        font-size: 26px;
+        text-align: center;
+    }
+    .cart > p{
+        text-align: center;
+    }
+    .cart > .container > .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart > .container > .box > .img_box > img{
+        width: 130px;
+        height: 130px;
+    }
+    .cart > .container > .box > .detail{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .cart > .container > .box > .detail > .info{
+        margin-left: 0;
+    }
+    .cart > .container > .box > .detail > .quantity{
+        margin: 15px 0;
+    }
+    .cart > .container > .box > .detail > .icon{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .cart > .bottom{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 480px){
+    .cart > h2{
+        font-size: 22px;
+    }
+    .cart > .empty_cart > img{
+        height: 200px;
+    }
+    .cart > .container > .box > .img_box > img{
+        width: 110px;
+        height: 110px;
+    }
+    .cart > .container > .box > .detail > .info > h3{
+        font-size: 14px;
+    }
+    .cart > .container > .box > .detail > .quantity > button{
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    .cart > .container > .box > .detail > .quantity > input{
+        width: 55px;
+    }
+    .cart > .bottom > button{
+        width: 100%;
+    }
+}
+
