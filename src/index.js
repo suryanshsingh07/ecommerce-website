@@ -12,7 +12,7 @@ root.render(
       domain="dev-lkarihykn50o4qgj.us.auth0.com"
       clientId="LrxUXGnVyXi96Cy5XxkoMu0NdXikKYOp"
       authorizationParams={{ redirect_uri: window.location.origin }}>
-        <BrowserRouter>
+        <BrowserRouter basename="/ecommerce-website/">
           <App />
         </BrowserRouter>
     </Auth0Provider>
